@@ -6,6 +6,10 @@ namespace Graphics.Client
         System.Windows.Application , IDisposable
        
     {
+
+
+
+
         #region Constructor
         public Program()
         {
