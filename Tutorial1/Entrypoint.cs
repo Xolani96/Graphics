@@ -4,12 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tutorial1
+namespace Graphics
 {
-    class Program
+    internal class Entrypoint
     {
-        static void Main(string[] args)
+        [STAThread]
+        private static void Main()
         {
+
         }
     }
 }
