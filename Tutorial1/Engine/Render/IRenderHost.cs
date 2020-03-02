@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Graphics
+namespace Graphics.Engine.Render
 {
-    internal class Entrypoint
+    public interface IRenderHost : IDisposable
     {
-        [STAThread]
-        private static void Main() => new Client.Program().Run();
+        IntPtr HostHandle { get; }
+
     }
 }
