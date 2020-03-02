@@ -4,6 +4,7 @@ namespace Graphics.Client
 {
     internal class Program: Application
     {
+        //test
 
     }
 }
