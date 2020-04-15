@@ -8,6 +8,7 @@ namespace Graphics.Engine.Render
 {
     public interface IRenderHost : IDisposable
     {
+        //test
         IntPtr HostHandle { get; }
 
     }
