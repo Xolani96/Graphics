@@ -14,8 +14,7 @@ namespace Graphics.Client
 
         private void Ctor()
         {
-            new System.Windows.Forms.Form().Show();
-            new System.Windows.Window().Show();
+            var readOnlyList = WindowFactory.SeedWindows();
         }
         public void Dispose()
         {

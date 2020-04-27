@@ -55,6 +55,7 @@
     <Compile Include="Engine\Render\RenderHost.cs" />
     <Compile Include="Entrypoint.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\U.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
