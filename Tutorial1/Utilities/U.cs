@@ -1,9 +1,18 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace Graphics.Utilities
 {
     public static class U
     {
+        public static void ForEach<T>(this IEnumerable<T> collection, Action<T> action)
+        {
+            foreach (var item in collection)
+            {
+                action(item);
+            }
+        }
         public static IntPtr Handle(this System.Windows.Forms.Control window)
         {
             return window.IsDisposed ? default : Handle((System.Windows.Forms.IWin32Window)window);

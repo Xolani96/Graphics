@@ -1,4 +1,5 @@
 ﻿using Graphics.Engine.Render;
+using Graphics.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,6 +17,7 @@ namespace Graphics.Client
             var renderhost = new[]
             {
                 CreateWindowForm(size, "Forms GDI", h => new RenderHost(h)),
+                CreateWindowWpf(size, "WPF GDI", h => new RenderHost(h))
             };
             return renderhost;
         }
@@ -46,7 +48,7 @@ namespace Graphics.Client
 
             window.Show();
 
-            return ctorrenderHost(hostcontrol.Handle); 
+            return ctorrenderHost(hostcontrol.Handle()); 
         }
         
         public static IRenderHost CreateWindowWpf(System.Drawing.Size size, string title, Func<IntPtr, IRenderHost> ctorrenderHost)
@@ -76,7 +78,7 @@ namespace Graphics.Client
 
             window.Show();
 
-            return ctorrenderHost(hostControl.Handle);
+            return ctorrenderHost(hostControl.Handle());
         }
     }
 }
