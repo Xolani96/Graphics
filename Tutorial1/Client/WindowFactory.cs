@@ -80,5 +80,10 @@ namespace Graphics.Client
 
             return ctorrenderHost(hostControl.Handle());
         }
+        
+        private static void SortWindows(IEnumerable<RenderHost> renderhost)
+        {
+
+        }
     }
 }
